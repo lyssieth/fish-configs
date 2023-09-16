@@ -1,3 +1,3 @@
 function ip --wraps="ip"
-    ip --color $argv
+    command ip --color $argv
 end
