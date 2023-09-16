@@ -34,6 +34,12 @@ if test -d ~/.go/bin
     set -ga PATH ~/.go/bin
 end
 
+# Add ~/.ghcup/bin to PATH
 if test -d ~/.ghcup/bin
     set -ga PATH ~/.ghcup/bin
+end
+
+# Add ~/.krew/bin to PATH
+if test -d ~/.krew/bin
+    set -ga PATH ~/.krew/bin
 end
