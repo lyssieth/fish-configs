@@ -14,6 +14,11 @@ if test -d ~/.local/share/pnpm
     set -gx PNPM_HOME ~/.local/share/pnpm
 end
 
+# Add ~/.dotnet to DOTNET_ROOT
+if test -d ~/.dotnet
+    set -gx DOTNET_ROOT ~/.dotnet
+end
+
 # Add ~/.dotnet/tools to PATH
 if test -d ~/.dotnet/tools
     set -ga PATH ~/.dotnet/tools
