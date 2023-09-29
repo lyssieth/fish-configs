@@ -49,3 +49,8 @@ end
 if test -d ~/.krew/bin
     set -ga PATH ~/.krew/bin
 end
+
+# Add /opt/wine-ge-custom/bin to PATH
+if test -d /opt/wine-ge-custom/bin
+    set -ga PATH /opt/wine-ge-custom/bin
+end
