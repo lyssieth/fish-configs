@@ -16,13 +16,13 @@ end
 
 # Add ~/.dotnet to DOTNET_ROOT and PATH
 if test -d ~/.dotnet
-    set -ga PATH ~/.dotnet
+    set -gp PATH ~/.dotnet # Prepends to PATH so we don't use system .NET
     set -gx DOTNET_ROOT ~/.dotnet
 end
 
 # Add ~/.dotnet/tools to PATH
 if test -d ~/.dotnet/tools
-    set -ga PATH ~/.dotnet/tools
+    set -gp PATH ~/.dotnet/tools
 end
 
 # Add ~/.surrealdb to PATH
