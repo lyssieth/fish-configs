@@ -1,3 +1,5 @@
+#!/usr/bin/fish
+
 # Add ~/.cargo/bin to PATH
 if test -d ~/.cargo/bin
     set -ga PATH ~/.cargo/bin
@@ -5,7 +7,7 @@ end
 
 # Add ~/.local/bin to PATH
 if test -d ~/.local/bin
-    set -ga PATH ~/.local/bin
+    set -gp PATH ~/.local/bin # Prepends so we can override system stuff
 end
 
 # Add ~/.local/share/pnpm to PATH
