@@ -56,3 +56,8 @@ end
 if test -d /opt/wine-ge-custom/bin
     set -ga PATH /opt/wine-ge-custom/bin
 end
+
+# Add ~/.deno/bin to PATH
+if test -d ~/.deno/bin
+    set -ga PATH ~/.deno/bin
+end
